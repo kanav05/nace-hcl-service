@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "4e754241-060f-44dd-969a-409cd419d03b",
+		"name": "nace-service-collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/nace-service/api/v1/createNace",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"level\":\"TEST\",\r\n    \"naceCode\":\"B\",\r\n    \"parent\":\"HCL\",\r\n    \"description\":\"It is testing for Spring Applcation\",\r\n    \"thisItemIncludes\":\"Spring Applcation\",\r\n    \"thisItemAlsoIincludes\":\"Spring Applcation2\",\r\n    \"rulings\":\"34\",\r\n    \"thisItemExcludes\":\"Spring Applcation6\",\r\n    \"referenceToISICRev\":\"Spring Applcation8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/nace-service/api/nace/createNace",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"nace-service",
+						"api",
+						"nace",
+						"createNace"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/nace-service/api/v1/nace/  fetch all records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/nace-service/api/nace/A",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"nace-service",
+						"api",
+						"nace",
+						"A"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/nace-service/api/v1/nace/ fetch single record",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/nace-service/api/nace/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"nace-service",
+						"api",
+						"nace",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
